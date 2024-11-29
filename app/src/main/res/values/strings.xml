@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TimeCalculator</string>
+    <string name="title">Калькулятор времени</string>
+    <string name="time1Hint">Время 1 (1m23s)</string>
+    <string name="time2Hint">Время 2 (3m48s)</string>
+    <string name="addProcess">+</string>
+    <string name="subtractProcess">-</string>
+</resources>
