@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
         title = "Калькулятор времени"
         toolBar.subtitle = "Считает разницу времени"
         toolBar.setLogo(R.drawable.time_calculator)
-
+        toolBar.setTitleTextColor(resources.getColor(R.color.text_toolbar, theme))
+        toolBar.setSubtitleTextColor(resources.getColor(R.color.text_toolbar, theme))
         timeInput1 = findViewById(R.id.timeInput1)
         timeInput2 = findViewById(R.id.timeInput2)
         addButton = findViewById(R.id.addButton)
