@@ -5,4 +5,7 @@
     <string name="time2Hint">Время 2 (3m48s)</string>
     <string name="addProcess">+</string>
     <string name="subtractProcess">-</string>
+    <string name="clearInputFields">Очистить поля ввода</string>
+    <string name="clearOutputFields">Очистить поле вывода</string>
+    <string name="exitProgramm">Выход из программы</string>
 </resources>

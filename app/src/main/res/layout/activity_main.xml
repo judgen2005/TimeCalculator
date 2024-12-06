@@ -7,17 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        android:background="@color/green"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/inputLayout"
@@ -28,8 +24,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleTextView"
-        app:layout_constraintVertical_bias="0.05">
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.1">
 
         <EditText
             android:id="@+id/timeInput1"
@@ -40,17 +36,20 @@
             android:hint="@string/time1Hint"
             android:inputType="text"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:importantForAutofill="no"/>
 
         <EditText
             android:id="@+id/timeInput2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:autofillHints="3m48s"
             android:hint="@string/time2Hint"
             android:inputType="text"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:importantForAutofill="no"/>
     </LinearLayout>
 
     <LinearLayout
@@ -66,16 +65,20 @@
 
         <Button
             android:id="@+id/addButton"
+            android:backgroundTint="@color/button_green"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/addProcess" />
+            android:text="@string/addProcess"
+            tools:ignore="ButtonStyle"/>
 
         <Button
             android:id="@+id/subtractButton"
+            android:backgroundTint="@color/button_green"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@string/subtractProcess" />
+            android:text="@string/subtractProcess"
+            tools:ignore="ButtonStyle"/>
     </LinearLayout>
 
     <TextView
